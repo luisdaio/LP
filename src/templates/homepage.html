@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block content %}
+<hr>
+
+<form action="/" method="POST" enctype="multipart/form-data">
+
+  <div class="form-group">
+    <label>Introduza uma imagem para classificar</label>
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" name="image" id="image">
+      <label class="custom-file-label" for="image">Selecione a imagem...</label>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Carregar</button>
+
+</form>
+{% endblock content %}
